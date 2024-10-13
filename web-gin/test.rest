@@ -1,0 +1,19 @@
+@serviceURL = http://localhost:8081
+@contentType = application/json
+
+###
+GET {{serviceURL}}/albums
+
+###
+POST {{serviceURL}}/albums
+Content-Type: {{contentType}}
+
+{
+    "id": "4",
+    "title": "The Modern Sound of Betty Carter",
+    "artist": "Betty Carter",
+    "price": 49.99
+}
+
+###
+GET {{serviceURL}}/albums/4
